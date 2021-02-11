@@ -1,7 +1,3 @@
-<script>
-	import successkid from "images/successkid.jpg";
-</script>
-
 <svelte:head>
 	<title>nicks.rodeo/</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
