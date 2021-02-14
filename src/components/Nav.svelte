@@ -55,8 +55,8 @@
 		height: 60px;
 		display: flex;
 		justify-content: space-between;
+		margin: auto;
 		margin-bottom: 2em;
-		flex: 0;
 	}
 
 	.menu {

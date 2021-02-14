@@ -27,14 +27,14 @@
 	}
 
 	main {
-		background-color: #c4c4fdaa;
-		box-shadow: 0px 0px 1em 1em #c4c4fdaa;
+		background-color: #c4c4fd99;
+		box-shadow: 0px 0px 1em 1em #c4c4fd99;
 		color: #242224;
 		margin: auto;
-		max-width: 56em;
+		/* max-width: 56em; */
 		padding: 2em 3.24em;
 		position: relative;
-		z-index: -1;
+		/* z-index: -1; */
 	}
 
 	#bgWrapper {
