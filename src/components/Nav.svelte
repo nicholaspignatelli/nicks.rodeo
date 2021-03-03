@@ -57,6 +57,7 @@
 		justify-content: space-between;
 		margin: auto;
 		margin-bottom: 2em;
+		box-shadow: 0 0.4rem 1rem -0.32rem rgba(0, 0, 0, 0.16);
 	}
 
 	.menu {
@@ -69,6 +70,7 @@
 			bottom: 0;
 			margin-bottom: 0;
 			font-size: 0.8em;
+			z-index: 2;
 		}
 	}
 

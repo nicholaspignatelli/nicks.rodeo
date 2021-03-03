@@ -4,81 +4,70 @@
 
 <h1>/about&nbsp;&nbsp;🤔</h1>
 
-<h2>The Personal Spiel</h2>
+<article class="product-card">
+	<div class="product-card__container">
+		<div class="product-card__content">
+			<h2 class="product-card__title">languages</h2>
+			<p class="product-card__text">
+				C, HTML, CSS, Javascript, Typescript, Kotlin
+			</p>
+		</div>
+		<div class="product-card__content">
+			<h2 class="product-card__title">frameworks & other tools</h2>
+			<p class="product-card__text">
+				JSX, Jest, React, Svelte, Sapper, Vert.x, Kafka, elasticsearch,
+				MongoDB, node, express, graphql, gatsby.js, slack, JIRA, Trello,
+				monday
+			</p>
+		</div>
 
-<h3>Skills</h3>
-
-<h3>Philosophies</h3>
-
-<p class="tag">hello</p>
-<p />
-
-<section>
-	<h2>Personal Overview</h2>
-	<p>I'm a fun guy... obviously loves the game basketball.</p>
-
-	<div class="tags">
-		<p class="tag">holy</p>
-		<p class="tag">you</p>
-		<p class="tag">are</p>
-		<p class="tag">such</p>
-		<p class="tag">a</p>
-		<p class="tag">tank</p>
-		<p class="tag">&nbsp;</p>
+		<div class="product-card__content">
+			<h2 class="product-card__title">technical competencies</h2>
+			<p class="product-card__text">
+				object oriented programming, functional programming, systems
+				design, SOLID Principles, Test-Driven Development,
+			</p>
+		</div>
 	</div>
-</section>
-
-<section>
-	<h2>A little bit about</h2>
-	<p>I'm a fun guy... obviously loves the game basketball.</p>
-
-	<div class="tags">
-		<p class="tag">holy</p>
-		<p class="tag">you</p>
-		<p class="tag">are</p>
-		<p class="tag">such</p>
-		<p class="tag">a</p>
-		<p class="tag">tank</p>
-		<p class="tag">&nbsp;</p>
-	</div>
-</section>
-
-<section>
-	<h2>Philosophies</h2>
-	<p>I'm a fun guy... obviously loves the game basketball.</p>
-
-	<div class="tags">
-		<p class="tag">holy</p>
-		<p class="tag">you</p>
-		<p class="tag">are</p>
-		<p class="tag">such</p>
-		<p class="tag">a</p>
-		<p class="tag">tank</p>
-		<p class="tag">&nbsp;</p>
-	</div>
-</section>
+</article>
 
 <style>
-	p.tag {
-		font-size: 0.82em;
-		letter-spacing: 0.016em;
-		border-radius: 3em;
-		background-color: #f8f8ff;
-		text-align: center;
-		padding: 0.32em 0.92em 0.1em;
-		display: inline;
-		margin: 0 0.2em;
-	}
-	.tags {
+	.product-card {
+		max-width: 100%;
+
 		display: flex;
-		flex-direction: row;
-		overflow-x: hidden;
-		text-shadow: 0 0 4px 14px #f8f8ff;
+		margin: 1rem;
+		position: relative;
+		overflow: hidden;
+		/* box-shadow: 0 0.8rem 2.4rem -1.4rem rgba(0, 0, 0, 0.5); */
+		display: flex;
 	}
 
-	section {
-		padding: 2.4em 3.2em;
-		/* border: 2px solid blue; */
-		margin: auto;
+	.product-card__content {
+		width: 98%;
+		padding: 1.6rem 2rem 1rem 1rem;
+		box-shadow: 0 0.8rem 2.4rem -1.4rem rgba(0, 0, 0, 0.5);
+	}
+	.product-card__title {
+		margin: 1rem 0;
+	}
+	.product-card__text {
+		margin: 1rem 0;
+		color: #332235;
+	}
+	.product-card__text:not(:last-child) {
+		margin-bottom: 2.6rem;
+	}
+
+	h1 {
+		text-align: center;
+		font-size: clamp(3.2rem, 8vw, 3.5rem);
+	}
+	h2 {
+		font-size: 1.8rem;
+	}
+	h5 {
+		font-size: 1.27rem;
+		letter-spacing: 0rem;
 	}
 </style>
