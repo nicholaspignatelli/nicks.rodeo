@@ -4,47 +4,55 @@
     import GithubIcon from "./vectors/GithubIcon.svelte";
 </script>
 
-<nav>
-    <a href="/">
-        <DownloadDocumentIcon />
-    </a>
-    <a href="https://github.com/nicholaspignatelli" target="_blank">
-        <GithubIcon />
-    </a>
-    <a href="mailto:nickpignatelli@icloud.com">
-        <SendIcon />
-    </a>
-</nav>
+<ul class="row">
+    <li>
+        <a href="/">
+            <DownloadDocumentIcon />
+        </a>
+    </li>
+
+    <li>
+        <a href="https://github.com/nicholaspignatelli" target="_blank">
+            <GithubIcon />
+        </a>
+    </li>
+
+    <li>
+        <a href="mailto:nickpignatelli@icloud.com">
+            <SendIcon />
+        </a>
+    </li>
+</ul>
 
 <style>
-    nav {
-        position: fixed;
+    .row {
         bottom: 0;
         right: 0;
-        display: flex;
-        justify-content: space-between;
-        /* border: 1px solid red; */
-        background-color: #c4c4fdaa;
-        box-shadow: 0px 0px 1em 1em #c4c4fdaa;
-        color: #222022;
-        /* border-radius: 0.1em; */
-        border-bottom: none;
+        justify-content: space-evenly;
+        position: fixed;
         margin: auto;
     }
-    a {
-        margin: 0.8em 1.28em 0 1.28em;
+    ul {
+        margin: 0;
+        padding: 0;
+        justify-content: space-evenly;
     }
-    @media only screen and (max-width: 375px) {
-        nav {
-            position: relative;
-            order: 1;
-            min-width: 100%;
-            justify-content: space-evenly;
-            top: 0;
-            margin: auto;
-            bottom: auto;
-            border-radius: 0;
-            box-shadow: none;
-        }
+
+    /* clearfix */
+    ul::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    li {
+        display: block;
+        padding: 0 0.4rem;
+        float: left;
+    }
+    a {
+        text-decoration: none;
+        padding: 1.91rem 1.38rem;
+        display: block;
     }
 </style>

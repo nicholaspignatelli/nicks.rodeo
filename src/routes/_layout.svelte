@@ -2,50 +2,41 @@
 	import Nav from "../components/Nav.svelte";
 	import StickyFooter from "../components/StickyFooter.svelte";
 	export let segment;
+	export const route = segment;
 </script>
 
 <div id="bgWrapper" />
+
 <Nav {segment} />
 <div>
 	<main>
+		{#if segment}
+			<h4>/{segment}</h4>
+		{:else}
+			<h4>/you-landed</h4>
+		{/if}
+	</main>
+	<main>
 		<slot />
 	</main>
-	<StickyFooter />
 </div>
+<StickyFooter />
 
 <style>
 	main {
-		background-color: #c4c4fd99;
-		box-shadow: 0px 0px 1em 1em #c4c4fd99;
-		color: #242224;
 		display: flex;
-		flex-direction: column;
+		justify-content: center;
 		margin: auto;
-		padding: 2em 3.236em;
-	}
-	@media only screen and (max-width: 375px) {
-		div {
-			display: flex;
-			flex-direction: column;
-		}
-
-		main {
-			max-width: 100%;
-			order: 2;
-			padding: 0.6em 0.936em;
-		}
 	}
 
 	#bgWrapper {
 		background: repeating-linear-gradient(
-			146deg,
-			#faf9fc84,
-			#faf9fc84 8px,
-			#ffffff84 8px,
-			#ffffff84 13px
+			56deg,
+			hsla(52, 42%, 71%, 0.38),
+			hsla(204, 47%, 75%, 0.38) 0.38rem,
+			hsla(204, 47%, 75%, 0.38) 0.38rem,
+			hsla(52, 42%, 71%, 0.38) 0.52rem
 		);
-
-		background-repeat: repeat;
 		height: 100%;
 		position: fixed;
 		width: 100%;

@@ -1,7 +1,7 @@
 <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 64 64"
-    width="34"
+    width="28"
     aria-labelledby="title"
     aria-describedby="desc"
     role="img"
@@ -16,7 +16,7 @@
         stroke="#222022"
         stroke-linecap="round"
         stroke-miterlimit="10"
-        stroke-width="3.3"
+        stroke-width="2.38"
         stroke-linejoin="round"
     />
 </svg>

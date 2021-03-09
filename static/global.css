@@ -1,53 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Sintony:wght=500&family=Inter:wght=800&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@342;473;652;900&display=swap');
 
+html {
+	font-size: 93.8%;
+}
 
 body {
+	font-family: 'Commissioner', sans-serif;
+	font-weight: 342;
+	letter-spacing: 0.04rem;
 	margin: 0;
-	font-family: Sintony, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-	font-size: 16px;
-	font-weight: 500;
-	line-height: 1.38;
-	letter-spacing: 0.03em;
-	color: #222022;
-	transition-timing-function: linear;
+	line-height: 1.62;
+	color: hsla(204, 47%, 12%, 1);
+}
 
+p {
+	margin-bottom: 1rem;
+	letter-spacing: 0.04rem;
+	font-weight: 342;
+	color: hsla(204, 47%, 12%, 1);
+}
+
+h1 {
+	margin-top: 0;
+	font-size: 5.005rem;
+	font-weight: 900;
+	line-height: 0.98;
+	letter-spacing: -0.04rem;
 
 }
 
-h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
-	margin: 0 0 0.5em 0;
-	font-family: Inter;
-	font-weight: 800;
-	letter-spacing: -0.03em;
-	line-height: 0.8;
+h5 {
+	margin: 1rem 1.38rem;
+	font-family: 'Commissioner', sans-serif;
+	line-height: 1.62;
+	font-weight: 342;
+	letter-spacing: 0.04rem;
+}
+
+h2 {
+	font-size: 3.627rem;
+	font-weight: 652;
+}
+
+h3 {
+	font-size: 2.628rem;
+}
+
+h4 {
+	font-size: 1.904rem;
+}
+
+h5 {
+	font-size: 1.38rem;
+}
+
+small,
+.text_small {
+	font-size: 0.725rem;
+	font-weight: 652;
+	letter-spacing: 0.057rem;
+
 }
 
 
-h1 {
-	font-size: 2em;
-}
 
 a {
 	color: inherit;
 }
 
-code {
-	font-family: menlo, inconsolata, monospace;
-	font-size: calc(1em - 2px);
-	color: #555;
-	background-color: #f0f0f0;
-	padding: 0.2em 0.4em;
-	border-radius: 2px;
-}
 
-@media (max-width: 375px) {
-	body {
-		font-size: 15px;
-	}
+.contentBg {
+	background: repeating-linear-gradient(104deg,
+			hsla(204, 47%, 75%, 0.48) 0.38rem,
+			hsla(52, 42%, 71%, 0.48),
+			hsla(52, 42%, 71%, 0.48) 0.52rem,
+			hsla(204, 47%, 75%, 0.48) 0.38rem);
+	box-shadow: 0 0.72rem 1.38rem -0.28rem #d6dbc5ff;
 }

@@ -14,7 +14,7 @@
 			id: 2,
 			date: "Summer 2019",
 			title: "Software Engineer Intern",
-			company: "'Innosquad' @ Scotiabank",
+			company: "The 'Innovation Squad' @ Scotiabank",
 			description:
 				"I programmed in Kotlin, built microservices, and worked on a reinforcement learning model to infer anomalies in trading platform traffic data.",
 		},
@@ -30,9 +30,9 @@
 			id: 4,
 			date: "Summer 2018",
 			title: "Customer Engagement Intern",
-			company: "Customer Engagement Intern @ Survalent",
+			company: "Customer Success Team @ Survalent",
 			description:
-				"It was a fun time! I programmed in Kotlin, built microservices, worked on a reinforcement learning model to infer anomalies in trading platform traffic data.",
+				"Provided e-learning webinars for existing customers that helped two initiatives: customer investment & commitment into Survalent products, and increased engagement on Survalent's cusotmer collaboration platform.",
 		},
 	];
 </script>
@@ -41,8 +41,6 @@
 	<title>{"nicks.rodeo"}/work</title>
 </svelte:head>
 
-<h1>/work&nbsp;&nbsp;🧑‍💻</h1>
-
 <section class="timeline">
 	{#each timelineItems as { date, title, company, description }}
 		<TimelineItem {date} {title} {company} {description} />
@@ -50,19 +48,4 @@
 </section>
 
 <style>
-	.timeline {
-		width: 100%;
-		max-width: 56rem;
-		margin: 5rem auto;
-	}
-
-	h1 {
-		text-align: center;
-		font-size: 3.2em;
-	}
-	h1:after {
-		margin-bottom: 0;
-		padding: 0;
-		line-height: 0;
-	}
 </style>

@@ -42,10 +42,7 @@
 <svelte:head>
 	<title>{"nicks.rodeo"}/portfolio</title>
 </svelte:head>
-
-<h1>/portfolio&nbsp;&nbsp;🧑‍💻</h1>
-
-<div class="portfolio">
+<div class="portfolio ">
 	{#each portfolioItems as { name, githubLink, summary, footerDescription, tags }}
 		<PortfolioItem
 			{name}
@@ -66,12 +63,9 @@
 		justify-content: center;
 		margin: auto;
 	}
+
 	.footer {
 		margin-bottom: 5em;
 		width: 100%;
-	}
-	h1 {
-		text-align: center;
-		font-size: 3.2em;
 	}
 </style>

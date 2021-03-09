@@ -1,73 +1,134 @@
+<script>
+	export let aboutBlurb = `Here are five random facts about me:`;
+	export let languages = [
+		"javascript",
+		"typescript",
+		"c",
+		"java",
+		"kotlin",
+		"python",
+	];
+	export let frameworksAndTools = [
+		"jsx",
+		"jest",
+		"react",
+		"svelte",
+		"sapper",
+		"vert.x",
+		"kafka",
+		"elasticsearch",
+		"mongodb",
+		"node",
+		"express",
+		"graphql",
+		"gatsby.js",
+		"gradle",
+		"slack",
+		"jira",
+		"trello",
+		"monday",
+		"mockito",
+	];
+	export let competencies = [
+		"object oriented programming",
+		"functional programming",
+		"systems design",
+		"solid principles",
+		`test-driven development`,
+		"agile development",
+	];
+</script>
+
 <svelte:head>
 	<title>About</title>
 </svelte:head>
-
-<h1>/about&nbsp;&nbsp;🤔</h1>
-
-<article class="product-card">
-	<div class="product-card__container">
-		<div class="product-card__content">
-			<h2 class="product-card__title">languages</h2>
-			<p class="product-card__text">
-				C, HTML, CSS, Javascript, Typescript, Kotlin
-			</p>
+<div>
+	<article class="contentBg">
+		<div>
+			<div>
+				<h4>{@html aboutBlurb}</h4>
+				<div class="facts">
+					<p>1.&nbsp;&nbsp;I grew up in the Greater Toronto Area</p>
+					<p>
+						2.&nbsp;&nbsp;People describe me as easy to get along
+						with.
+					</p>
+					<p>
+						3.&nbsp;&nbsp;I have a strong affinity towards a
+						functional & atomic approach to solving problems.
+					</p>
+					<p>
+						4.&nbsp;&nbsp;My favourite passtimes right now are
+						playing guitar & making yummy food.
+					</p>
+					<p>5.&nbsp;&nbsp;i dont know yet - stuck</p>
+				</div>
+			</div>
 		</div>
-		<div class="product-card__content">
-			<h2 class="product-card__title">frameworks & other tools</h2>
-			<p class="product-card__text">
-				JSX, Jest, React, Svelte, Sapper, Vert.x, Kafka, elasticsearch,
-				MongoDB, node, express, graphql, gatsby.js, slack, JIRA, Trello,
-				monday
-			</p>
-		</div>
+	</article>
 
-		<div class="product-card__content">
-			<h2 class="product-card__title">technical competencies</h2>
-			<p class="product-card__text">
-				object oriented programming, functional programming, systems
-				design, SOLID Principles, Test-Driven Development,
-			</p>
+	<article class="contentBg">
+		<div>
+			<!-- languages -->
+			<div>
+				<h4 style="margin-left: 0;">languages</h4>
+				<div class="tags">
+					{#each languages.sort() as language}
+						<p class="tag">{language}</p>
+					{/each}
+				</div>
+			</div>
+			<!-- frameworks,tools -->
+			<div>
+				<h4 style="margin-left: 0;">frameworks, tools</h4>
+				<div class="tags">
+					{#each frameworksAndTools.sort() as tool}
+						<p class="tag">{tool}</p>
+					{/each}
+				</div>
+			</div>
+			<!-- some other competencies -->
+			<div>
+				<h4 style="margin-left: 0;">some other competencies</h4>
+				<div class="tags">
+					{#each competencies.sort() as competency}
+						<p class="tag">{competency}</p>
+					{/each}
+				</div>
+			</div>
 		</div>
-	</div>
-</article>
+	</article>
+</div>
 
 <style>
-	.product-card {
-		max-width: 100%;
-
-		display: flex;
-		margin: 1rem;
-		position: relative;
-		overflow: hidden;
-		/* box-shadow: 0 0.8rem 2.4rem -1.4rem rgba(0, 0, 0, 0.5); */
-		display: flex;
+	h4 {
+		margin-left: 0;
 	}
-
-	.product-card__content {
-		width: 98%;
-		padding: 1.6rem 2rem 1rem 1rem;
-		box-shadow: 0 0.8rem 2.4rem -1.4rem rgba(0, 0, 0, 0.5);
+	article {
+		padding: 1rem 1.72rem 1.9rem;
+		margin: 1rem 1.72rem 1.9rem;
+		max-width: 48rem;
+		box-shadow: 0 0.72rem 1.38rem -0.28rem rgba(0, 0, 0, 0.28);
 	}
-	.product-card__title {
-		margin: 1rem 0;
+	.facts {
+		margin: 1rem 1.72rem 1.9rem;
 	}
-	.product-card__text {
-		margin: 1rem 0;
-		color: #332235;
-	}
-	.product-card__text:not(:last-child) {
-		margin-bottom: 2.6rem;
-	}
-
-	h1 {
+	.tag {
+		letter-spacing: 0.019rem;
+		border-radius: 1.38rem;
+		background-color: hsla(204, 47%, 25%, 0.19);
 		text-align: center;
-		font-size: clamp(3.2rem, 8vw, 3.5rem);
+		padding: 0.18rem 0.76rem;
+		margin: 0.19rem 0.72rem;
+		display: inline;
+		margin-bottom: 0.55rem;
+		box-shadow: 0 0.11rem 0.16rem -0.06rem hsla(204, 47%, 25%, 0.19);
 	}
-	h2 {
-		font-size: 1.8rem;
-	}
-	h5 {
-		font-size: 1.27rem;
-		letter-spacing: 0rem;
+	.tags {
+		display: flex;
+		flex-direction: row;
+		max-width: 100%;
+		flex-wrap: wrap;
+		justify-content: left;
 	}
 </style>

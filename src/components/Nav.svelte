@@ -2,7 +2,7 @@
 	export let segment;
 </script>
 
-<nav>
+<nav class="contentBg">
 	<!-- logo -->
 	<ul class="menu">
 		<li>
@@ -48,16 +48,10 @@
 
 <style>
 	nav {
-		padding: 0 0em;
-		background: linear-gradient(90deg, #5555bbba, #5555bbda);
-		color: #f8f8ff;
-		width: 100%;
-		height: 60px;
+		height: min-content;
 		display: flex;
 		justify-content: space-between;
 		margin: auto;
-		margin-bottom: 2em;
-		box-shadow: 0 0.4rem 1rem -0.32rem rgba(0, 0, 0, 0.16);
 	}
 
 	.menu {
@@ -78,7 +72,6 @@
 		margin: 0;
 		padding: 0;
 		justify-content: space-around;
-		/* display: flex; */
 	}
 
 	/* clearfix */
@@ -102,11 +95,11 @@
 	[aria-current]::after {
 		position: absolute;
 		content: "";
-		width: calc(100% - 1em);
-		height: 2px;
-		background-color: #aaffac;
+		width: calc(100% - 1rem);
+		height: 0.19rem;
+		background-color: palevioletred;
 		display: block;
-		bottom: 16%;
+		bottom: 0.48rem;
 	}
 
 	a {
