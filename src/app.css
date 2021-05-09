@@ -8,6 +8,7 @@ body {
     font-weight: 400;
     line-height: 1.67;
     color: #222229;
+    text-decoration: none;
 }
 
 
@@ -17,9 +18,12 @@ html {
 
 /*15.2px*/
 
-p {
+p,
+a {
     margin-bottom: 1rem;
     letter-spacing: 0.03rem;
+    color: #222229;
+    text-decoration: none;
 }
 
 h1,
@@ -57,4 +61,8 @@ h5 {
 
 small {
     font-size: 0.618rem;
+}
+
+a {
+    text-decoration: none;
 }
