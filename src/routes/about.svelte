@@ -34,7 +34,7 @@
 </script>
 
 <svelte:head>
-	<title>About</title>
+	<title>About Nick Pignatelli</title>
 </svelte:head>
 <div>
 	<article class="contentBg">

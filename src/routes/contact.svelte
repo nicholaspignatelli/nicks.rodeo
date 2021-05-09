@@ -21,14 +21,21 @@
 </script>
 
 <svelte:head>
-	<title>Contact</title>
+	<title>Contact Nick Pignatelli</title>
 </svelte:head>
 
 <div>
-	{#each contactItems as { name, githubLink, summary, footerDescription, tags }}
+	{#each contactItems as { name, summary }}
 		<ContactItem {name} {summary} />
 	{/each}
 </div>
 
 <style>
+	header {
+		padding: 60px;
+		text-align: center;
+		background: #1abc9c;
+		color: white;
+		font-size: 30px;
+	}
 </style>

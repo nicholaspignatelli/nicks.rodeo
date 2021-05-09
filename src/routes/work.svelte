@@ -38,7 +38,7 @@
 </script>
 
 <svelte:head>
-	<title>{'nicks.rodeo'}/work</title>
+	<title>Work Exp Nick Pignatelli</title>
 </svelte:head>
 
 <section class="timeline">

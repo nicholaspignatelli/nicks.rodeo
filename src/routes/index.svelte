@@ -1,5 +1,5 @@
 <svelte:head>
-	<title>Nick Pignatelli's Website</title>
+	<title>Nick Pignatelli</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </svelte:head>
 
