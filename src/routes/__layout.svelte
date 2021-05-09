@@ -3,7 +3,7 @@
 	import Nav from '$lib/Nav.svelte';
 	import StickyFooter from '$lib/StickyFooter.svelte';
 	export let segment;
-	export const route = segment;
+	let route = segment;
 </script>
 
 <!-- <div id="bgWrapper" /> -->
@@ -12,7 +12,7 @@
 <div>
 	<main>
 		{#if segment}
-			<h4>/{segment}</h4>
+			<h4>/{route}</h4>
 		{:else}
 			<h4>/you-landed</h4>
 		{/if}
