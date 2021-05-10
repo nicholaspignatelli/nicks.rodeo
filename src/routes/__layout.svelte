@@ -3,12 +3,11 @@
 	import Nav from '$lib/Nav.svelte';
 	import StickyFooter from '$lib/StickyFooter.svelte';
 	export let segment;
-	export const route = segment;
 </script>
 
 <!-- <div id="bgWrapper" /> -->
 
-<Nav {segment} />
+<Nav />
 
 <div>
 	<main>

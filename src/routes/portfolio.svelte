@@ -30,7 +30,7 @@
 </script>
 
 <svelte:head>
-	<title>Portfolio Nick Pignatelli</title>
+	<title>Portfolio</title>
 </svelte:head>
 <div class="portfolio ">
 	{#each portfolioItems as { name, githubLink, summary, footerDescription, tags }}

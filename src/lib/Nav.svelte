@@ -6,28 +6,22 @@
 	<!-- logo -->
 	<ul class="menu">
 		<li>
-			<a aria-current={segment === undefined ? 'page' : undefined} href=".">nicks.rodeo</a>
+			<a sveltekit:prefetch href=".">nicks.rodeo</a>
 		</li>
 	</ul>
-
-	<!-- nav bar -->
 	<ul class="menu">
 		<li>
-			<a aria-current={segment === '/about' ? 'page' : undefined} href="about">/about</a>
+			<a sveltekit:prefetch href="about">/about</a>
 		</li>
 
 		<li>
-			<a rel="prefetch" aria-current={segment === 'portfolio' ? 'page' : undefined} href="portfolio"
-				>/portfolio</a
-			>
+			<a sveltekit:prefetch href="portfolio">/portfolio</a>
 		</li>
 		<li>
-			<a rel="prefetch" aria-current={segment === 'work' ? 'page' : undefined} href="work">/work</a>
+			<a sveltekit:prefetch href="work">/work</a>
 		</li>
 		<li>
-			<a rel="prefetch" aria-current={segment === 'contact' ? 'page' : undefined} href="contact"
-				>/contact</a
-			>
+			<a sveltekit:prefetch href="contact">/contact</a>
 		</li>
 	</ul>
 </nav>
@@ -68,22 +62,18 @@
 		padding: 0 0.4rem;
 		/* float: left; */
 	}
-	[aria-current] {
-		position: relative;
-		display: inline-block;
-	}
-	[aria-current]::after {
-		position: absolute;
-		content: '';
-		width: calc(100% - 1rem);
-		height: 0.23rem;
-		background-color: #ff3322;
-		display: block;
-		bottom: 0.48rem;
-	}
 	a {
 		text-decoration: none;
 		padding: 1em 0.5em;
 		display: block;
+	}
+
+	a:active {
+		font-weight: 700;
+		color: green;
+	}
+	a:hover {
+		font-weight: 700;
+		transition: 0.1s;
 	}
 </style>

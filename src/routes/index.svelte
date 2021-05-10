@@ -12,11 +12,9 @@
 				>universalize technology, drive value,
 			</strong>and help to make the <strong>world a better place.</strong>
 		</p>
-		<a href="/about"> -->&nbsp;&nbsp;-->&nbsp;&nbsp;--> </a>
+		<a href="/about"> {'--> right this way <--'}</a>
 	</div>
 </section>
-
-=
 
 <style>
 	._hero_section_ {

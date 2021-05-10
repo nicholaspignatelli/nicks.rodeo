@@ -4,12 +4,13 @@
 	export let summary = ``;
 	export let tags = [''];
 	export let githubLink = '';
+	import GithubIcon from '$lib/vectors/GithubIcon.svelte';
 </script>
 
 <section class="portfolioItem contentBg">
 	<div style="display:flex; justify-content: space-between;">
 		<h4 style="margin-left: -0.19rem;">{name}</h4>
-		<h4><a href={githubLink} target="_blank">#</a></h4>
+		<p><a id="link" href={githubLink} target="_blank">Checkout<br />the repo</a></p>
 	</div>
 	<p class="text_small">{footerDescription}</p>
 	<p>{@html summary}</p>
@@ -28,6 +29,12 @@
 </section>
 
 <style>
+	#link:hover {
+		color: #ffcc44;
+		border: 0.16rem solid #ffcc44;
+		transition: 0.5s;
+		scale: 1.4;
+	}
 	a {
 		text-decoration: none;
 		border-radius: 1rem;

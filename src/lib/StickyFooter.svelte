@@ -6,7 +6,7 @@
 
 <ul class="row">
 	<li>
-		<a href="/">
+		<a href="https://drive.google.com/file/d/11KRzub3VWVhWy7lbSBU3zD8dB_fWhxhF/view?usp=sharing">
 			<DownloadDocumentIcon />
 		</a>
 	</li>
