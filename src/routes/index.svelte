@@ -1,31 +1,27 @@
-<svelte:head>
-	<title>Nick Pignatelli</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</svelte:head>
+<h2>NICHOLAS PIGNATELLI</h2>
 
-<section>
-	<div class="_hero_section_">
-		<p>Hi there, and thanks for stopping by!&nbsp;:-) My name is</p>
-		<h1 class="_name_">Nick<br />Pignatelli</h1>
-		<p>
-			I am a fullstack developer who is on a mission to <strong
-				>universalize technology, drive value,
-			</strong>and help to make the <strong>world a better place.</strong>
-		</p>
-		<a href="/about"> {'--> right this way <--'}</a>
-	</div>
-</section>
+<p class="text_small">OBJECTIVE STATEMENT</p>
+<p>
+    I want to change the world to make it a better place, because I love life
+    and want others to love it too.
+</p>
+<br />
+<p class="text_small">QUICK SUMMARY</p>
+<li>
+    Full-stack developer who's most experienced with Java/SpringBoot micro
+    service development.
+</li>
+<li>
+    Just under 2 years of development experience in a professional environment,
+    with 8 of those months post-grad.
+</li>
+<li>Lover of pragmatic, functional, and simple approaches.</li>
+<li>Really fun at parties! :D</li>
+<br />
+<p class="text_small">TOP KEYWORDS</p>
+<li>Java, SpringBoot, JavaScript, HTML, CSS, Svelte, RESTful API Developer</li>
 
+<!-- markup (zero or more items) goes here -->
 <style>
-	._hero_section_ {
-		max-width: 48rem;
-		text-align: left;
-	}
-	._name_ {
-		font-weight: 900;
-	}
-	section {
-		max-width: 48rem;
-		margin: 0 auto;
-	}
+    /* your styles go here */
 </style>

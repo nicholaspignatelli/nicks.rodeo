@@ -1,0 +1,71 @@
+
+/* Typography Rules */
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+Mono');
+
+/* CSS Reset Rules */
+html,
+body,
+div,
+p,
+ul,
+li,
+a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+a {
+  color:aquamarine;
+}
+a:visited {
+  text-decoration: none;
+  color: orange;
+}
+html {font-size: 100%;} /*16px*/
+
+body {
+  background: darkslateblue;
+  font-family: 'Noto Sans Mono', sans-serif;
+  font-weight: 360;
+  line-height: 1.41;
+  color: whitesmoke;
+  margin: auto;
+  width: 85%;
+  
+}
+
+
+
+p {margin-bottom: 0.42rem;}
+
+
+h1, h2, h3, h4, h5,h6 {
+  font-family: 'Noto Sans Mono', sans-serif;
+  font-weight: 360;
+  margin: 1rem 0rem;
+}
+
+h1 {
+  font-size: 3.052rem;
+}
+
+h2 {font-size: 2.441rem;}
+
+h3 {font-size: 1.953rem;}
+
+h4 {font-size: 1.563rem;}
+
+.h5 {font-size: 1rem;}
+
+small, .text_small {
+  padding: 0rem 0.36rem; 
+  font-size: 0.8rem; 
+  font-weight:900; 
+  letter-spacing: 0.05rem; 
+  background-color: #000000a0}
+
+li {padding: 0.36rem 0rem; font-weight: 200;}
+
+/* .li{padding: 0.36rem 0rem;} */
